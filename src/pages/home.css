@@ -1,0 +1,12 @@
+.home {
+
+}
+
+.home h1 {
+    color: darkcyan;
+    text-align: center;
+}
+
+.home .home-img{
+    width: 100%
+}
