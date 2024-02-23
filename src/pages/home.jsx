@@ -5,7 +5,7 @@ function Home() {
     <div className="home">
       <h1>Welcome</h1>
 
-      <img className="home-img" src="/images/home.jpg" alt="" />
+      <img className="home-img" src="/images/home.jpg" alt="Logo" />
     </div>
   );
 }

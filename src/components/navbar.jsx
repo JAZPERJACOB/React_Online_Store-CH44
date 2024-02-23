@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 //Here goes the logic
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg ">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Navbar
+          LifeStyle
         </Link>
         <button
           className="navbar-toggler"
@@ -35,12 +35,17 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about">
-                About
+                About me
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link disabled" aria-disabled="true">
-                Disabled
+              <Link className="nav-link active" aria-current="page" to="/admin">
+                Admin
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/cart">
+                Cart
               </Link>
             </li>
           </ul>
