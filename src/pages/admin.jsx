@@ -10,9 +10,7 @@ function Admin() {
     image: "",
   });
 
-  function handleInputChange(){
-    
-  }
+  function handleInputChange() {}
 
   return (
     <div className="admin-page">
@@ -65,6 +63,7 @@ function Admin() {
           className="form-control"
         />
       </div>
+      <button>Save</button>
     </div>
   );
 }

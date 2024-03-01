@@ -1,6 +1,4 @@
-import axios from 'axios';
-
-let catalog = [
+catalog = [
     {
         "title":"Black Hoodie",
         "category":"Sweater",
@@ -43,41 +41,4 @@ let catalog = [
         "image": "tshirt.jpg",
         "_id": "6",
     },
-
-];
-
-
-class DataService {
-
-    async getProducts(){
-        //return catalog;
-
-        let response = await axios.get("http://127.0.0.1:5000/api/products");
-        return response.data;
-    }
-
-    addToCart(prod) {
-        // add a product to local storage
-        //local storage support string, json
-        let cart = this.readCart();
-        cart.push(prod);
-
-        const jsonCart = JSON.stringify(cart);
-        localStorage.setItem("cart", jsonCart);
-        console.log(cart);
-    }
-
-    readCart() {
-        // reads the cart from local storage
-        const jsonCart = localStorage.getItem("cart");
-        if(jsonCart) {
-            return JSON.parse(jsonCart);
-        }
-        else {
-            return []; // empty cart
-        }
-    }
-
-};
-
-export default DataService;
+]
